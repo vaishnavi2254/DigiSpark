@@ -1,0 +1,21 @@
+.services-page {
+  padding: 60px 20px;
+  background: white;
+  text-align: center;
+}
+
+.services-container {
+  max-width: 800px;
+  margin: auto;
+}
+
+.services-container ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.services-container li {
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+}
