@@ -1,55 +1,61 @@
 import React from 'react';
 import './Footer.css';
 
-function Footer() {
+export default function Footer() {
   return (
     <footer className="footer">
-      <div className="footer-container">
-
-        <div className="footer-section brand">
-          <h2>DigiSpark</h2>
-          <p>Empowering your brand with smart digital marketing strategies.</p>
-        </div>
-
-        <div className="footer-section">
-          <h3>Quick Links</h3>
-          <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/services">Services</a></li>
-            <li><a href="/blog">Blog</a></li>
-            <li><a href="/contact">Contact</a></li>
-          </ul>
-        </div>
-
-        <div className="footer-section">
-          <h3>Services</h3>
-          <ul>
-            <li>SEO</li>
-            <li>Social Media Marketing</li>
-            <li>Email Campaigns</li>
-            <li>Paid Ads</li>
-            <li>Content Creation</li>
-          </ul>
-        </div>
-
-        <div className="footer-section">
-          <h3>Contact Us</h3>
-          <p>Email: contact@digispark.com</p>
-          <p>Phone: +91 98765 43210</p>
+      <div className="footer-top">
+        <div className="footer-column">
+          <h3>DigiSpark</h3>
+          <p>
+            Igniting digital growth for businesses worldwide through innovative marketing strategies.
+          </p>
           <div className="social-icons">
-            <a href="#"><i className="fab fa-facebook-f"></i></a>
-            <a href="#"><i className="fab fa-instagram"></i></a>
-            <a href="#"><i className="fab fa-linkedin-in"></i></a>
+            <a href="#"><span>🌐</span></a>
+            <a href="#"><span>🐦</span></a>
+            <a href="#"><span>📸</span></a>
+            <a href="#"><span>💼</span></a>
           </div>
         </div>
 
+        <div className="footer-column">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Testimonials</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <div className="footer-column">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#">SEO</a></li>
+            <li><a href="#">Social Media Marketing</a></li>
+            <li><a href="#">Google Ads</a></li>
+            <li><a href="#">Content Marketing</a></li>
+            <li><a href="#">Branding</a></li>
+          </ul>
+        </div>
+
+        <div className="footer-column">
+          <h4>Contact Us</h4>
+          <p>📍 123 Marketing Street, Digital City, 10001</p>
+          <p>✉️ hello@digispark.com</p>
+          <p>📞 +1 (555) 123-4567</p>
+        </div>
       </div>
+
       <div className="footer-bottom">
-        <p>&copy; {new Date().getFullYear()} DigiSpark. All rights reserved.</p>
+        <p>© 2023 DigiSpark. All rights reserved.</p>
+        <div className="footer-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Policy</a>
+        </div>
       </div>
     </footer>
   );
 }
-
-export default Footer;
